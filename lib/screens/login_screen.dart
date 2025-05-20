@@ -77,16 +77,16 @@ class _LoginScreenState extends State<LoginScreen> {
       await prefs.setString('user_name', response['user_name']);
       await prefs.setString('email', response['email']);
 
-          Navigator.pushReplacement(
-     context,
-       MaterialPageRoute(
-         builder: (context) => _userType == 'admin'
-              ? const AdminScreen()
-              : const NavigationMenu(),
-        ),
-       );
+    //       Navigator.pushReplacement(
+    //  context,
+    //    MaterialPageRoute(
+    //      builder: (context) => _userType == 'admin'
+    //           ? const AdminScreen()
+    //           : const NavigationMenu(),
+    //     ),
+    //    );
       // navigate into your new bottom‐nav flow:
-      // Navigator.pushReplacementNamed(context, '/nav');
+      Navigator.pushReplacementNamed(context, '/nav');
     } catch (e) {
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text(e.toString())));

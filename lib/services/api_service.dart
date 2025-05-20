@@ -8,7 +8,7 @@ import '../models/user_model.dart';
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' as path;  
 class ApiService {
-  static const String baseUrl = 'http://192.168.187.173:5000';
+  static const String baseUrl = 'http://192.168.0.113:5000';
   
 // static Future<String> uploadImage(File imageFile) async {
 //   final prefs = await SharedPreferences.getInstance();
